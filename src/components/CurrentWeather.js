@@ -1,7 +1,7 @@
 import react from "react";
 
 
-const CurrentWeather = ({city, coord, current, icon}) => {
+const CurrentWeather = ({city, coord, current, icon, currentWeather, currentWeatherDescription}) => {
 
     return (
         
@@ -13,7 +13,7 @@ const CurrentWeather = ({city, coord, current, icon}) => {
                     <p>Lat: {coord.lat} | Lon: {coord.lon}</p>
                 </div>
                 <div className="description">
-                    <p>{current.weather[0].main}</p>
+                    <p>{currentWeather}</p>
                     <p>Temperature: {Math.round(current.temp)} &#8457;</p>
                 </div>
             </div>

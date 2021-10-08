@@ -78,6 +78,8 @@ class App extends React.Component {
                 city={this.state.city}
                 current={this.state.current}
                 icon={this.state.currentIcon}
+                currentWeatherDescription={this.state.currentWeatherDescription}
+                currentWeather={this.state.currentWeather}
               />
             </div>
             <div className="eight wide column">
